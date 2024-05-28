@@ -1,2 +1,2 @@
 # contract_demo
-for study web3
+for study web3!
