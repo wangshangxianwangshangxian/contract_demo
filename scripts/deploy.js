@@ -5,7 +5,7 @@ async function main() {
 
     console.log("Deploying contracts with the account:", deployer.address);
 
-    const initialSupply = ethers.utils.parseUnits("1000000", 18);
+    const initialSupply = ethers.parseUnits("1000000", 18);
     const MyToken = await ethers.getContractFactory("WaCoin");
     const myToken = await MyToken.deploy(initialSupply);
 

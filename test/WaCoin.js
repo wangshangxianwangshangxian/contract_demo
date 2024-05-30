@@ -14,10 +14,6 @@ describe("TodoList Contract", function () {
     wa = await W.deploy(initialSupply);
   });
 
-//   it("Should create a task successfully", async function () {
-//     const initialSupply = ethers.utils.parseUnits("1000000", 18)
-//   });
-
     it('check balance', async function () {
         const balance = await wa.balanceOf(owner.address);
         console.log(balance)
