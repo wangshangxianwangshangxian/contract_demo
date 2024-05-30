@@ -37,7 +37,9 @@
 2. 编写合约
 3. 测试合约
 - 使用默认的 `npx hardhat test` 来部署一个合约，它会随着脚本的结束而结束。使用`npx hardhat node`来启动一个节点，就可以持久化测试，直到关闭IDE。
-4. 部署合约
+4. 部署&验证合约
+验证合约指的是把合约的源码放到区块浏览器中公开，这样有三个好处：增加透明性、增加信任度，便于调试和审计，验证教程可以看这篇[hardhat教程](https://hardhat.org/hardhat-runner/plugins/nomicfoundation-hardhat-verify)
+
 
 ## 代币合约
 代币不是币，是一种数字资产，所以狗狗币，NFT，游戏道具都可以理解为代币，而以太币才是货币，还是加密货币。
