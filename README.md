@@ -38,12 +38,14 @@
 3. 测试合约
 - 使用默认的 `npx hardhat test` 来部署一个合约，它会随着脚本的结束而结束。使用`npx hardhat node`来启动一个节点，就可以持久化测试，直到关闭IDE。
 4. 部署&验证合约
-验证合约指的是把合约的源码放到区块浏览器中公开，这样有三个好处：增加透明性、增加信任度，便于调试和审计，验证教程可以看这篇[hardhat教程](https://hardhat.org/hardhat-runner/plugins/nomicfoundation-hardhat-verify)
+验证合约指的是把合约的源码放到区块浏览器中公开，这样有三个好处：增加透明性、增加信任度，便于调试和审计，验证教程可以看这篇[hardhat验证教程](https://hardhat.org/hardhat-runner/plugins/nomicfoundation-hardhat-verify)
 
 
 ## 代币合约
 代币不是币，是一种数字资产，所以狗狗币，NFT，游戏道具都可以理解为代币，而以太币才是货币，还是加密货币。
+
 ERC各个标准在应用层面实际上是一个合约，你的合约继承他们，就代表着你符合他们的标准。
+
 合约需要符合ERC20标准，所以在合约中需要引入ERC20.sol，并且你的合约要继承他们。
 ```solidity
 import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
