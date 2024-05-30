@@ -1,0 +1,19 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Debug Tests",
+            "program": "${workspaceFolder}/node_modules/.bin/hardhat",
+            "args": [
+                "test",
+                "./test/WaCoin.js"
+            ],
+            "cwd": "${workspaceFolder}",
+            "skipFiles": [
+                "<node_internals>/**"
+            ]
+        }
+    ]
+}
