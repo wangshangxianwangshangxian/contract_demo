@@ -4,7 +4,9 @@
   "description": "for study web3!",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "complie": "docker run -v $(pwd)/contracts:/contracts ethereum/solc:0.8.24 --bin --abi /contracts/todo_list.sol",
+    "deploy": "npx hardhat run scripts/deploy_todolist.js --network localhost"
   },
   "keywords": [],
   "author": "",
